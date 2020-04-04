@@ -7,26 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class QuizPage extends AppCompatActivity {
+public class Question0 extends AppCompatActivity {
 
-    // Variable Declaration
-
-    Button button ;
+    Button submitButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_page);
-
-        // Introducing the button function
-
-        button = findViewById(R.id.playButton);
-
-        // Click Function
-
-        button.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_question0);
+        submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuizPage.this,Question0.class);
+                Intent intent = new Intent(Question0.this,Question.class);
                 startActivity(intent);
             }
         });
