@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <LinearLayout
-        android:id="@+id/optionsContainer"
+        android:id="@+id/quesionContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -39,30 +39,32 @@
             android:layout_margin="16dp"
             android:background="@drawable/rounded_button_2"
             android:padding="16dp"
-            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took '"
+            android:text="question 1"
             android:textColor="#23293F"></TextView>
 
         <TextView
             android:id="@+id/noindicator"
-            android:layout_width="match_parent"
+            android:layout_width="79dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:gravity="center"
             android:padding="8dp"
-            android:text="5/10"
+            android:text="1/1"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"></TextView>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/optionsContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/optionsContainer">
+        app:layout_constraintTop_toBottomOf="@+id/quesionContainer">
 
 
         <Button
@@ -72,7 +74,8 @@
             android:layout_margin="8sp"
             android:background="@drawable/rounded_button_answer"
             android:padding="16sp"
-            android:text="Button" />
+            android:text="Button"
+            android:textColor="@android:color/black"/>
 
         <Button
             android:id="@+id/button2"
@@ -81,7 +84,8 @@
             android:layout_margin="8sp"
             android:background="@drawable/rounded_button_answer"
             android:padding="16sp"
-            android:text="Button" />
+            android:text="Button"
+            android:textColor="@android:color/black"/>
 
         <Button
             android:id="@+id/button3"
@@ -90,7 +94,8 @@
             android:layout_margin="8sp"
             android:background="@drawable/rounded_button_answer"
             android:padding="16sp"
-            android:text="Button" />
+            android:text="Button"
+            android:textColor="@android:color/black"/>
 
         <Button
             android:id="@+id/button4"
@@ -99,15 +104,34 @@
             android:layout_margin="8sp"
             android:background="@drawable/rounded_button_answer"
             android:padding="16sp"
-            android:text="Button" />
+            android:text="Button"
+            android:textColor="@android:color/black"/>
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/nextButton"
+        android:layout_width="189dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:alpha="0.7"
+        android:background="@drawable/rounded_button_answer"
+        android:backgroundTint="#E6E3E3"
+        android:enabled="false"
+        android:fontFamily="sans-serif"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/submitButton"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_width="198dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/rounded_button"
         android:fontFamily="sans-serif"
         android:text="Submit"
@@ -115,8 +139,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

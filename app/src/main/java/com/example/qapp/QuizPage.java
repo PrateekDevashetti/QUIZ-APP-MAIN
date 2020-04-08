@@ -26,7 +26,7 @@ public class QuizPage extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuizPage.this,Question0.class);
+                Intent intent = new Intent(QuizPage.this,Question.class);
                 startActivity(intent);
             }
         });
